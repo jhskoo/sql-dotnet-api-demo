@@ -1,3 +1,11 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using Dapper;
+using System.Data;
+using System.Threading.Tasks;
+
+namespace DemoApi.Controllers
+{
 /// <summary>
 /// EmployeeController provides an HTTP GET endpoint for querying employee records
 /// using a parameterized SQL Server stored procedure (usp_SearchEmployees).
@@ -13,15 +21,6 @@
 /// This controller demonstrates how to pass user input to a stored procedure,
 /// handle nullable parameters, and return raw SQL output directly to the client.
 /// </summary>
-
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using Dapper;
-using System.Data;
-using System.Threading.Tasks;
-
-namespace DemoApi.Controllers
-{
     [ApiController]
     [Route("api/[controller]")]
     public class EmployeeController : ControllerBase
