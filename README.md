@@ -1,4 +1,3 @@
-# sql-dotnet-api-demo
 # SQL + .NET API Demo
 
 This repository demonstrates how to expose a SQL Server stored procedure through a modern .NET Core Web API using Dapper.
